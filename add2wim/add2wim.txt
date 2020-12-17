@@ -108,4 +108,5 @@ add add2wim\wxsStub.dll "\Program Files\wxsStub.dll"
 add add2wim\wxsUI "\Program Files\wxsUI"
 add add2wim\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
 add add2wim\winpeshl.ini \Windows\System32\winpeshl.ini
+add add2wim\pecmd.exe \Windows\System32\pecmd.exe
 
