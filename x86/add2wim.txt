@@ -1,0 +1,110 @@
+delete --force setup.exe
+delete --force --recursive sources
+delete --force --recursive "\Program Files\Common Files"
+delete --force --recursive \Users\Default\NTUSER.DAT
+delete --force --recursive \Windows\AppCompat
+delete --force --recursive \Windows\apppatch
+delete --force \Windows\bfsvc.exe
+delete --force --recursive \Windows\Branding
+delete --force --recursive \Windows\CbsTemp
+delete --force --recursive \Windows\DiagTrack
+delete --force --recursive \Windows\en-US
+delete --force --recursive \Windows\Help
+delete --force --recursive \Windows\LiveKernelReports
+delete --force --recursive \Windows\Logs
+delete --force --recursive \Windows\Microsoft.NET
+delete --force --recursive \Windows\PLA
+delete --force --recursive \Windows\PolicyDefinitions
+delete --force --recursive \Windows\schemas
+delete --force --recursive \Windows\security
+delete --force --recursive \Windows\ServiceState
+delete --force --recursive \Windows\servicing
+delete --force --recursive \Windows\Speech
+delete --force  \Windows\system.ini
+delete --force --recursive \Windows\temp
+delete --force --recursive \Windows\tracing
+delete --force --recursive \Windows\Vss
+delete --force --recursive \Windows\WaaS
+delete --force \Windows\win.ini
+delete --force \Windows\WindowsShell.Manifest
+delete --force --recursive \Windows\WinSxS\Backup
+delete --force --recursive \Windows\WinSxS\Catalogs
+delete --force --recursive \Windows\WinSxS\FileMaps
+delete --force --recursive \Windows\WinSxS\InstallTemp
+delete --force \Windows\WinSxS\migration.xml
+delete --force --recursive \Windows\WinSxS\Temp
+delete --force \Windows\zh-CN\bfsvc.exe.mui
+delete --force \Windows\hh.exe
+delete --force \Windows\zh-CN\hh.exe.mui
+delete --force --recursive \Windows\System32\0409
+delete --force --recursive \Windows\System32\AdvancedInstallers
+delete --force --recursive \Windows\System32\ar-SA
+delete --force --recursive \Windows\System32\bg-BG
+delete --force --recursive \Windows\System32\catroot2
+delete --force --recursive \Windows\System32\cs-CZ
+delete --force --recursive \Windows\System32\da-DK
+delete --force --recursive \Windows\System32\de-DE
+delete --force --recursive \Windows\System32\DiagSvcs
+delete --force --recursive \Windows\System32\downlevel
+delete --force --recursive \Windows\System32\DriverState
+delete --force --recursive \Windows\System32\el-GR
+delete --force --recursive \Windows\System32\en-GB
+delete --force --recursive \Windows\System32\en-US
+delete --force --recursive \Windows\System32\es-ES
+delete --force --recursive \Windows\System32\es-MX
+delete --force --recursive \Windows\System32\et-EE
+delete --force --recursive \Windows\System32\fi-FI
+delete --force --recursive \Windows\System32\fr-CA
+delete --force --recursive \Windows\System32\fr-FR
+delete --force --recursive \Windows\System32\GroupPolicy
+delete --force --recursive \Windows\System32\GroupPolicyUsers
+delete --force --recursive \Windows\System32\he-IL
+delete --force --recursive \Windows\System32\hr-HR
+delete --force --recursive \Windows\System32\hu-HU
+delete --force --recursive \Windows\System32\it-IT
+delete --force --recursive \Windows\System32\ja-JP
+delete --force --recursive \Windows\System32\ko-KR
+delete --force --recursive \Windows\System32\LogFiles
+delete --force --recursive \Windows\System32\lt-LT
+delete --force --recursive \Windows\System32\lv-LV
+delete --force --recursive \Windows\System32\migration
+delete --force --recursive \Windows\System32\MUI
+delete --force --recursive \Windows\System32\nb-NO
+delete --force --recursive \Windows\System32\nl-NL
+delete --force --recursive \Windows\System32\oobe
+delete --force --recursive \Windows\System32\pl-PL
+delete --force --recursive \Windows\System32\pt-BR
+delete --force --recursive \Windows\System32\pt-PT
+delete --force --recursive \Windows\System32\ras
+delete --force --recursive \Windows\System32\RasToast
+delete --force --recursive \Windows\System32\Recovery
+delete --force --recursive \Windows\System32\restore
+delete --force --recursive \Windows\System32\ro-RO
+delete --force --recursive \Windows\System32\ru-RU
+delete --force --recursive \Windows\System32\setup
+delete --force --recursive \Windows\System32\sk-SK
+delete --force --recursive \Windows\System32\sl-SI
+delete --force --recursive \Windows\System32\SMI
+delete --force --recursive \Windows\System32\Speech
+delete --force --recursive \Windows\System32\spp
+delete --force --recursive \Windows\System32\sr-Latn-RS
+delete --force --recursive \Windows\System32\sv-SE
+delete --force --recursive \Windows\System32\Sysprep
+delete --force --recursive \Windows\System32\th-TH
+delete --force --recursive \Windows\System32\tr-TR
+delete --force --recursive \Windows\System32\uk-UA
+delete --force --recursive \Windows\System32\WCN
+delete --force --recursive \Windows\System32\WindowsPowerShell
+delete --force --recursive \Windows\System32\winevt
+delete --force --recursive \Windows\System32\zh-TW
+add x86\Explorer.exe "\Program Files\Explorer.exe"
+add x86\LUA_TEST.bat "\Program Files\LUA_TEST.bat"
+add x86\UI_TEST.bat "\Program Files\UI_TEST.bat"
+add x86\WinXShell.exe "\Program Files\WinXShell.exe"
+add x86\WinXShell.jcfg "\Program Files\WinXShell.jcfg"
+add x86\wallpaper.jpg "\Program Files\wallpaper.jpg"
+add x86\wxsStub.dll "\Program Files\wxsStub.dll"
+add x86\wxsUI "\Program Files\wxsUI"
+add x86\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
+add x86\winpeshl.ini \Windows\System32\winpeshl.ini
+add x86\pecmd.exe \Windows\System32\pecmd.exe
