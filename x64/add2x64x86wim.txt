@@ -1,0 +1,251 @@
+delete --force setup.exe
+delete --force --recursive sources
+delete --force --recursive "\Program Files\Common Files"
+delete --force --recursive \Users\Default\NTUSER.DAT
+delete --force --recursive \Windows\AppCompat
+delete --force --recursive \Windows\apppatch
+delete --force \Windows\bfsvc.exe
+delete --force --recursive \Windows\Branding
+delete --force --recursive \Windows\CbsTemp
+delete --force --recursive \Windows\DiagTrack
+delete --force --recursive \Windows\en-US
+delete --force --recursive \Windows\Help
+delete --force --recursive \Windows\LiveKernelReports
+delete --force --recursive \Windows\Logs
+delete --force --recursive \Windows\Microsoft.NET
+delete --force --recursive \Windows\PLA
+delete --force --recursive \Windows\PolicyDefinitions
+delete --force --recursive \Windows\schemas
+delete --force --recursive \Windows\security
+delete --force --recursive \Windows\ServiceState
+delete --force --recursive \Windows\servicing
+delete --force --recursive \Windows\Speech
+delete --force  \Windows\system.ini
+delete --force --recursive \Windows\temp
+delete --force --recursive \Windows\tracing
+delete --force --recursive \Windows\Vss
+delete --force --recursive \Windows\WaaS
+delete --force \Windows\win.ini
+delete --force \Windows\WindowsShell.Manifest
+delete --force --recursive \Windows\WinSxS\Backup
+delete --force --recursive \Windows\WinSxS\Catalogs
+delete --force --recursive \Windows\WinSxS\FileMaps
+delete --force --recursive \Windows\WinSxS\InstallTemp
+delete --force \Windows\WinSxS\migration.xml
+delete --force --recursive \Windows\WinSxS\Temp
+delete --force \Windows\zh-CN\bfsvc.exe.mui
+delete --force \Windows\hh.exe
+delete --force \Windows\zh-CN\hh.exe.mui
+delete --force --recursive \Windows\System32\0409
+delete --force --recursive \Windows\System32\AdvancedInstallers
+delete --force --recursive \Windows\System32\ar-SA
+delete --force --recursive \Windows\System32\bg-BG
+delete --force --recursive \Windows\System32\catroot2
+delete --force --recursive \Windows\System32\cs-CZ
+delete --force --recursive \Windows\System32\da-DK
+delete --force --recursive \Windows\System32\de-DE
+delete --force --recursive \Windows\System32\DiagSvcs
+delete --force --recursive \Windows\System32\downlevel
+delete --force --recursive \Windows\System32\DriverState
+delete --force --recursive \Windows\System32\el-GR
+delete --force --recursive \Windows\System32\en-GB
+delete --force --recursive \Windows\System32\en-US
+delete --force --recursive \Windows\System32\es-ES
+delete --force --recursive \Windows\System32\es-MX
+delete --force --recursive \Windows\System32\et-EE
+delete --force --recursive \Windows\System32\fi-FI
+delete --force --recursive \Windows\System32\fr-CA
+delete --force --recursive \Windows\System32\fr-FR
+delete --force --recursive \Windows\System32\GroupPolicy
+delete --force --recursive \Windows\System32\GroupPolicyUsers
+delete --force --recursive \Windows\System32\he-IL
+delete --force --recursive \Windows\System32\hr-HR
+delete --force --recursive \Windows\System32\hu-HU
+delete --force --recursive \Windows\System32\it-IT
+delete --force --recursive \Windows\System32\ja-JP
+delete --force --recursive \Windows\System32\ko-KR
+delete --force --recursive \Windows\System32\LogFiles
+delete --force --recursive \Windows\System32\lt-LT
+delete --force --recursive \Windows\System32\lv-LV
+delete --force --recursive \Windows\System32\migration
+delete --force --recursive \Windows\System32\MUI
+delete --force --recursive \Windows\System32\nb-NO
+delete --force --recursive \Windows\System32\nl-NL
+delete --force --recursive \Windows\System32\oobe
+delete --force --recursive \Windows\System32\pl-PL
+delete --force --recursive \Windows\System32\pt-BR
+delete --force --recursive \Windows\System32\pt-PT
+delete --force --recursive \Windows\System32\ras
+delete --force --recursive \Windows\System32\RasToast
+delete --force --recursive \Windows\System32\Recovery
+delete --force --recursive \Windows\System32\restore
+delete --force --recursive \Windows\System32\ro-RO
+delete --force --recursive \Windows\System32\ru-RU
+delete --force --recursive \Windows\System32\setup
+delete --force --recursive \Windows\System32\sk-SK
+delete --force --recursive \Windows\System32\sl-SI
+delete --force --recursive \Windows\System32\SMI
+delete --force --recursive \Windows\System32\Speech
+delete --force --recursive \Windows\System32\spp
+delete --force --recursive \Windows\System32\sr-Latn-RS
+delete --force --recursive \Windows\System32\sv-SE
+delete --force --recursive \Windows\System32\Sysprep
+delete --force --recursive \Windows\System32\th-TH
+delete --force --recursive \Windows\System32\tr-TR
+delete --force --recursive \Windows\System32\uk-UA
+delete --force --recursive \Windows\System32\WCN
+delete --force --recursive \Windows\System32\WindowsPowerShell
+delete --force --recursive \Windows\System32\winevt
+delete --force --recursive \Windows\System32\zh-TW
+delete --force --recursive \Windows\SysWOW64
+add x64\1\windows\System32\wow64.dll "\windows\System32\wow64.dll"
+add x64\1\windows\System32\wow64cpu.dll "\windows\System32\wow64cpu.dll"
+add x64\1\windows\System32\wow64win.dll "\windows\System32\wow64win.dll"
+add x64\1\windows\SysWOW64\advapi32.dll "\windows\SysWOW64\advapi32.dll"
+add x64\1\windows\SysWOW64\bcrypt.dll "\windows\SysWOW64\bcrypt.dll"
+add x64\1\windows\SysWOW64\bcryptprimitives.dll "\windows\SysWOW64\bcryptprimitives.dll"
+add x64\1\windows\SysWOW64\cabinet.dll "\windows\SysWOW64\cabinet.dll"
+add x64\1\windows\SysWOW64\cfgmgr32.dll "\windows\SysWOW64\cfgmgr32.dll"
+add x64\1\windows\SysWOW64\cmd.exe "\windows\SysWOW64\cmd.exe"
+add x64\1\windows\SysWOW64\cmdext.dll "\windows\SysWOW64\cmdext.dll"
+add x64\1\windows\SysWOW64\combase.dll "\windows\SysWOW64\combase.dll"
+add x64\1\windows\SysWOW64\comdlg32.dll "\windows\SysWOW64\comdlg32.dll"
+add x64\1\windows\SysWOW64\coml2.dll "\windows\SysWOW64\coml2.dll"
+add x64\1\windows\SysWOW64\credui.dll "\windows\SysWOW64\credui.dll"
+add x64\1\windows\SysWOW64\crypt32.dll "\windows\SysWOW64\crypt32.dll"
+add x64\1\windows\SysWOW64\cryptbase.dll "\windows\SysWOW64\cryptbase.dll"
+add x64\1\windows\SysWOW64\cryptdll.dll "\windows\SysWOW64\cryptdll.dll"
+add x64\1\windows\SysWOW64\cryptsp.dll "\windows\SysWOW64\cryptsp.dll"
+add x64\1\windows\SysWOW64\davhlpr.dll "\windows\SysWOW64\davhlpr.dll"
+add x64\1\windows\SysWOW64\dbgcore.dll "\windows\SysWOW64\dbgcore.dll"
+add x64\1\windows\SysWOW64\dbghelp.dll "\windows\SysWOW64\dbghelp.dll"
+add x64\1\windows\SysWOW64\devobj.dll "\windows\SysWOW64\devobj.dll"
+add x64\1\windows\SysWOW64\dllhost.exe "\windows\SysWOW64\dllhost.exe"
+add x64\1\windows\SysWOW64\dnsapi.dll "\windows\SysWOW64\dnsapi.dll"
+add x64\1\windows\SysWOW64\dui70.dll "\windows\SysWOW64\dui70.dll"
+add x64\1\windows\SysWOW64\duser.dll "\windows\SysWOW64\duser.dll"
+add x64\1\windows\SysWOW64\dwmapi.dll "\windows\SysWOW64\dwmapi.dll"
+add x64\1\windows\SysWOW64\edputil.dll "\windows\SysWOW64\edputil.dll"
+add x64\1\windows\SysWOW64\ExplorerFrame.dll "\windows\SysWOW64\ExplorerFrame.dll"
+add x64\1\windows\SysWOW64\FirewallAPI.dll "\windows\SysWOW64\FirewallAPI.dll"
+add x64\1\windows\SysWOW64\fltLib.dll "\windows\SysWOW64\fltLib.dll"
+add x64\1\windows\SysWOW64\fwbase.dll "\windows\SysWOW64\fwbase.dll"
+add x64\1\windows\SysWOW64\gdi32.dll "\windows\SysWOW64\gdi32.dll"
+add x64\1\windows\SysWOW64\gdi32full.dll "\windows\SysWOW64\gdi32full.dll"
+add x64\1\windows\SysWOW64\iertutil.dll "\windows\SysWOW64\iertutil.dll"
+add x64\1\windows\SysWOW64\imagehlp.dll "\windows\SysWOW64\imagehlp.dll"
+add x64\1\windows\SysWOW64\imageres.dll "\windows\SysWOW64\imageres.dll"
+add x64\1\windows\SysWOW64\imm32.dll "\windows\SysWOW64\imm32.dll"
+add x64\1\windows\SysWOW64\IPHLPAPI.DLL "\windows\SysWOW64\IPHLPAPI.DLL"
+add x64\1\windows\SysWOW64\kernel.appcore.dll "\windows\SysWOW64\kernel.appcore.dll"
+add x64\1\windows\SysWOW64\kernel32.dll "\windows\SysWOW64\kernel32.dll"
+add x64\1\windows\SysWOW64\KernelBase.dll "\windows\SysWOW64\KernelBase.dll"
+add x64\1\windows\SysWOW64\mfc42.dll "\windows\SysWOW64\mfc42.dll"
+add x64\1\windows\SysWOW64\mpr.dll "\windows\SysWOW64\mpr.dll"
+add x64\1\windows\SysWOW64\msasn1.dll "\windows\SysWOW64\msasn1.dll"
+add x64\1\windows\SysWOW64\msi.dll "\windows\SysWOW64\msi.dll"
+add x64\1\windows\SysWOW64\msimg32.dll "\windows\SysWOW64\msimg32.dll"
+add x64\1\windows\SysWOW64\msvcp_win.dll "\windows\SysWOW64\msvcp_win.dll"
+add x64\1\windows\SysWOW64\msvcrt.dll "\windows\SysWOW64\msvcrt.dll"
+add x64\1\windows\SysWOW64\netapi32.dll "\windows\SysWOW64\netapi32.dll"
+add x64\1\windows\SysWOW64\netutils.dll "\windows\SysWOW64\netutils.dll"
+add x64\1\windows\SysWOW64\nsi.dll "\windows\SysWOW64\nsi.dll"
+add x64\1\windows\SysWOW64\ntdll.dll "\windows\SysWOW64\ntdll.dll"
+add x64\1\windows\SysWOW64\NtlmShared.dll "\windows\SysWOW64\NtlmShared.dll"
+add x64\1\windows\SysWOW64\ntmarta.dll "\windows\SysWOW64\ntmarta.dll"
+add x64\1\windows\SysWOW64\ole32.dll "\windows\SysWOW64\ole32.dll"
+add x64\1\windows\SysWOW64\oleacc.dll "\windows\SysWOW64\oleacc.dll"
+add x64\1\windows\SysWOW64\oleaccrc.dll "\windows\SysWOW64\oleaccrc.dll"
+add x64\1\windows\SysWOW64\oleaut32.dll "\windows\SysWOW64\oleaut32.dll"
+add x64\1\windows\SysWOW64\oledlg.dll "\windows\SysWOW64\oledlg.dll"
+add x64\1\windows\SysWOW64\olepro32.dll "\windows\SysWOW64\olepro32.dll"
+add x64\1\windows\SysWOW64\pdh.dll "\windows\SysWOW64\pdh.dll"
+add x64\1\windows\SysWOW64\powrprof.dll "\windows\SysWOW64\powrprof.dll"
+add x64\1\windows\SysWOW64\profapi.dll "\windows\SysWOW64\profapi.dll"
+add x64\1\windows\SysWOW64\propsys.dll "\windows\SysWOW64\propsys.dll"
+add x64\1\windows\SysWOW64\psapi.dll "\windows\SysWOW64\psapi.dll"
+add x64\1\windows\SysWOW64\reg.exe "\windows\SysWOW64\reg.exe"
+add x64\1\windows\SysWOW64\regsvr32.exe "\windows\SysWOW64\regsvr32.exe"
+add x64\1\windows\SysWOW64\rpcrt4.dll "\windows\SysWOW64\rpcrt4.dll"
+add x64\1\windows\SysWOW64\rsaenh.dll "\windows\SysWOW64\rsaenh.dll"
+add x64\1\windows\SysWOW64\rundll32.exe "\windows\SysWOW64\rundll32.exe"
+add x64\1\windows\SysWOW64\samcli.dll "\windows\SysWOW64\samcli.dll"
+add x64\1\windows\SysWOW64\sechost.dll "\windows\SysWOW64\sechost.dll"
+add x64\1\windows\SysWOW64\secur32.dll "\windows\SysWOW64\secur32.dll"
+add x64\1\windows\SysWOW64\SensApi.dll "\windows\SysWOW64\SensApi.dll"
+add x64\1\windows\SysWOW64\setupapi.dll "\windows\SysWOW64\setupapi.dll"
+add x64\1\windows\SysWOW64\SHCore.dll "\windows\SysWOW64\SHCore.dll"
+add x64\1\windows\SysWOW64\shell32.dll "\windows\SysWOW64\shell32.dll"
+add x64\1\windows\SysWOW64\shfolder.dll "\windows\SysWOW64\shfolder.dll"
+add x64\1\windows\SysWOW64\shlwapi.dll "\windows\SysWOW64\shlwapi.dll"
+add x64\1\windows\SysWOW64\spfileq.dll "\windows\SysWOW64\spfileq.dll"
+add x64\1\windows\SysWOW64\sspicli.dll "\windows\SysWOW64\sspicli.dll"
+add x64\1\windows\SysWOW64\stdole2.tlb "\windows\SysWOW64\stdole2.tlb"
+add x64\1\windows\SysWOW64\ucrtbase.dll "\windows\SysWOW64\ucrtbase.dll"
+add x64\1\windows\SysWOW64\ulib.dll "\windows\SysWOW64\ulib.dll"
+add x64\1\windows\SysWOW64\umpdc.dll "\windows\SysWOW64\umpdc.dll"
+add x64\1\windows\SysWOW64\urlmon.dll "\windows\SysWOW64\urlmon.dll"
+add x64\1\windows\SysWOW64\user32.dll "\windows\SysWOW64\user32.dll"
+add x64\1\windows\SysWOW64\userenv.dll "\windows\SysWOW64\userenv.dll"
+add x64\1\windows\SysWOW64\usp10.dll "\windows\SysWOW64\usp10.dll"
+add x64\1\windows\SysWOW64\uxtheme.dll "\windows\SysWOW64\uxtheme.dll"
+add x64\1\windows\SysWOW64\version.dll "\windows\SysWOW64\version.dll"
+add x64\1\windows\SysWOW64\wimgapi.dll "\windows\SysWOW64\wimgapi.dll"
+add x64\1\windows\SysWOW64\win32u.dll "\windows\SysWOW64\win32u.dll"
+add x64\1\windows\SysWOW64\windows.storage.dll "\windows\SysWOW64\windows.storage.dll"
+add x64\1\windows\SysWOW64\WindowsCodecs.dll "\windows\SysWOW64\WindowsCodecs.dll"
+add x64\1\windows\SysWOW64\winhttp.dll "\windows\SysWOW64\winhttp.dll"
+add x64\1\windows\SysWOW64\wininet.dll "\windows\SysWOW64\wininet.dll"
+add x64\1\windows\SysWOW64\winmm.dll "\windows\SysWOW64\winmm.dll"
+add x64\1\windows\SysWOW64\winmmbase.dll "\windows\SysWOW64\winmmbase.dll"
+add x64\1\windows\SysWOW64\winnsi.dll "\windows\SysWOW64\winnsi.dll"
+add x64\1\windows\SysWOW64\winspool.drv "\windows\SysWOW64\winspool.drv"
+add x64\1\windows\SysWOW64\wintrust.dll "\windows\SysWOW64\wintrust.dll"
+add x64\1\windows\SysWOW64\WinTypes.dll "\windows\SysWOW64\WinTypes.dll"
+add x64\1\windows\SysWOW64\wkscli.dll "\windows\SysWOW64\wkscli.dll"
+add x64\1\windows\SysWOW64\ws2_32.dll "\windows\SysWOW64\ws2_32.dll"
+add x64\1\windows\SysWOW64\wsock32.dll "\windows\SysWOW64\wsock32.dll"
+add x64\1\windows\SysWOW64\wtsapi32.dll "\windows\SysWOW64\wtsapi32.dll"
+add x64\1\windows\SysWOW64\xmllite.dll "\windows\SysWOW64\xmllite.dll"
+add x64\1\windows\WinSxS\Manifests "\windows\WinSxS\Manifests"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc"
+add x64\1\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4 "\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4"
+add x64\1\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307 "\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307"
+add x64\1\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5 "\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5"
+add x64\1\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708 "\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708"
+add x64\1\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f "\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f"
+add x64\1\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6 "\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6"
+add x64\1\windows\WinSxS\Manifests\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc.manifest "\windows\WinSxS\Manifests\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft-windows-comctl32-v5.resources_31bf3856ad364e35_10.0.18362.1_zh-cn_388f02b141dfdce2.manifest "\windows\WinSxS\Manifests\x86_microsoft-windows-comctl32-v5.resources_31bf3856ad364e35_10.0.18362.1_zh-cn_388f02b141dfdce2.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4.manife"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307.manifes"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.i..utomation.proxystub_6595b64144ccf1df_1.0.18362.592_none_8970e91bb4e25d44.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.i..utomation.proxystub_6595b64144ccf1df_1.0.18362.592_none_8970e91bb4e25d44.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.isolationautomation_6595b64144ccf1df_1.0.18362.592_none_dff997e855d84330.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.isolationautomation_6595b64144ccf1df_1.0.18362.592_none_dff997e855d84330.manifest"
+add x64\1\windows\WinSxS\Manifests\x86_microsoft.windows.systemcompatible_6595b64144ccf1df_6.0.18362.592_none_360a2b4be425d50f.manifest "\windows\WinSxS\Manifests\x86_microsoft.windows.systemcompatible_6595b64144ccf1df_6.0.18362.592_none_360a2b4be425d50f.manifest"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\f "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\f"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\GdiPlus.dll "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\GdiPlus.dll"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\r "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\r"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\f\GdiPlus.dll "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\f\GdiPlus.dll"
+add x64\1\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\r\GdiPlus.dll "\windows\WinSxS\wow64_microsoft.windows.gdiplus.systemcopy_31bf3856ad364e35_10.0.18362.592_none_46ce3536bc334afc\r\GdiPlus.dll"
+add x64\1\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4\comctl32.dll.mui "\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.18362.592_zh-cn_e76b485c6ea9b8b4\comctl32.dll.mui"
+add x64\1\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307\comctl32.dll.mui "\windows\WinSxS\x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.18362.592_zh-cn_a3ff9bbb3b56f307\comctl32.dll.mui"
+add x64\1\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5\comctl32.dll "\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.592_none_71d995095ae1acb5\comctl32.dll"
+add x64\1\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708\comctl32.dll "\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.592_none_2e6de868278ee708\comctl32.dll"
+add x64\1\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f\GdiPlus.dll "\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.18362.592_none_70076c68e91b872f\GdiPlus.dll"
+add x64\1\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6\GdiPlus.dll "\windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.592_none_5f58db4d822160d6\GdiPlus.dll"
+add x64\Explorer.exe "\Program Files\Explorer.exe"
+add x64\LUA_TEST.bat "\Program Files\LUA_TEST.bat"
+add x64\UI_TEST.bat "\Program Files\UI_TEST.bat"
+add x64\WinXShell.exe "\Program Files\WinXShell.exe"
+add x64\WinXShell.jcfg "\Program Files\WinXShell.jcfg"
+add x64\wallpaper.jpg "\Program Files\wallpaper.jpg"
+add x64\wxsStub.dll "\Program Files\wxsStub.dll"
+add x64\wxsUI "\Program Files\wxsUI"
+add x64\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
+add x64\winpeshl.ini \Windows\System32\winpeshl.ini
+add x64\pecmd.exe \Windows\System32\pecmd.exe
+
