@@ -17,3 +17,6 @@
 - 放入上述文件其中之一后，直接制作
 - 执行Make_Minipe(ALL_IN_ONE).bat
 
+20210306更新主批处理 Make_Minipe(ALL_IN_ONE).bat出处:
+
+http://bbs.wuyou.net/forum.php?mod=redirect&goto=findpost&ptid=423303&pid=4252110&fromuid=504115
