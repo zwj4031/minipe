@@ -29,6 +29,22 @@ for /f "delims=" %%i in (bin\Win10x86_64.txt) do (
         for /f "delims=" %%a in ('bin\wimlib dir %wimfile% 1 --path=windows\winsxs ^| find "." ^| findstr /vi "%%i"') do echo delete --force --recursive "%%a">>excel.txt
         )
 )
+
+echo. & echo 准备释放注册表...... & echo.
+if not exist %~dp0\build md %~dp0\build
+bin\7z.exe e -o%~dp0build -aoa %wimfile% Windows/System32/config/system
+if "%Processor_Architecture%%Processor_Architew6432%" equ "x86" (
+set "NSudo=%~dp0x86\NSudo32.exe"
+) else (
+set "NSudo=%~dp0x64\NSudo64.exe"
+) 
+%NSudo% -U:S -P:E -M:S "reg load hklm\minipe %~dp0build\system">NUL
+%NSudo% -U:S -P:E -M:S "reg add "HKLM\SYSTEM\ControlSet001\Services\mpssvc" /f /v "Start" /t REG_DWORD /d 4">NUL
+echo. & echo 挂载修改完毕，上载注册表...... & echo.
+%NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">NUL
+echo. & echo 覆盖%wimfile%中的注册表...... & echo.
+bin\wimlib update %wimfile% --command="add '%~dp0build\system' '\Windows\System32\config\system'"
+
 echo. & echo 正在增删削减%wimfile%包里的文件制作PE过程中，请您稍微等待 ...... & echo.
 bin\wimlib dir %wimfile% 1 --path=Windows\SysWOW64 | find ".exe" >NUL && (set FD=x64) || (set FD=x86)
 bin\wimlib update %wimfile%<excel.txt>NUL
@@ -42,6 +58,7 @@ echo. & echo 结束时间：%endT%   耗时：%costT:~0,-2%.%costT:~-2% 秒
 del /f /q *.txt
 set output=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%wimfile%
 ren %wimfile% "%output%"
+rd /s /q %~dp0build
 echo. & echo 感谢您的等待，现在PE已经制作完成，%output%就是你的网络骨头版pe成品！ & echo.
 pause
 EXIT
