@@ -134,6 +134,7 @@
   },
   "::开始菜单":
   {
+   "noconnections":true,
     "start_pushed_bkcolor" : [0, 100, 180],
     "start_icon_comment": "theme;empty;custom",
     "start_icon": "theme",
