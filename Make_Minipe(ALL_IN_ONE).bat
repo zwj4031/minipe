@@ -8,7 +8,7 @@ if exist boot.wim goto :boot_wim
 
 for %%i in (*.iso) do (
 echo 没有发现winre.wim和boot.wim，正在尝试从iso中解压出boot.wim ......
-bin\7z.exe e -o"%~dp0" -aoa "%%i" sources/boot.wim
+bin\7z.exe e -o"%~dp0" -aoa "%%i" sources/boot.wim>NUL
 if exist boot.wim goto :boot_wim
 )
 echo. & echo 找不到winre.wim、boot.wim、系统iso任何一个，按任意键退出 ......
@@ -16,11 +16,13 @@ pause>nul & EXIT
 
 :boot_wim
 echo 发现boot.wim，直接制作，准备删除卷1 ......
-bin\wimlib delete boot.wim 1 --check
+bin\wimlib delete boot.wim 1 --check>NUL
 set wimfile=boot.wim
 
 :start
+
 echo. & echo 开始时间：%time% & set startT=%time%
+echo. & echo 稍候………………
 if exist excel.txt del excel.txt /f /q
 for /f "delims=" %%i in (bin\Win10x86_64.txt) do (
         echo %%i | find ".exe" >NUL && (
@@ -30,20 +32,23 @@ for /f "delims=" %%i in (bin\Win10x86_64.txt) do (
         )
 )
 
+::修改注册表
 echo. & echo 准备释放注册表...... & echo.
-if not exist %~dp0\build md %~dp0\build
-bin\7z.exe e -o%~dp0build -aoa %wimfile% Windows/System32/config/system
+if not exist %~dp0build md %~dp0build
+bin\7z.exe e -o%~dp0build -aoa %wimfile% Windows/System32/config/system>NUL
 if "%Processor_Architecture%%Processor_Architew6432%" equ "x86" (
 set "NSudo=%~dp0x86\NSudo32.exe"
 ) else (
 set "NSudo=%~dp0x64\NSudo64.exe"
 ) 
-%NSudo% -U:S -P:E -M:S "reg load hklm\minipe %~dp0build\system">NUL
-%NSudo% -U:S -P:E -M:S "reg add "HKLM\SYSTEM\ControlSet001\Services\mpssvc" /f /v "Start" /t REG_DWORD /d 4">NUL
+start "" /w /min %NSudo% -U:S -P:E -M:S "reg load hklm\minipe %~dp0build\system">NUL
+start "" /w /min %NSudo% -U:S -P:E -M:S "reg add "HKLM\minipe\ControlSet001\Services\mpssvc" /f /v "Start" /t REG_DWORD /d 3">NUL
 echo. & echo 挂载修改完毕，上载注册表...... & echo.
-%NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">NUL
+start "" /w /min %NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">nul
+start "" /w /min %NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">nul
 echo. & echo 覆盖%wimfile%中的注册表...... & echo.
 bin\wimlib update %wimfile% --command="add '%~dp0build\system' '\Windows\System32\config\system'"
+::修改注册表完毕
 
 echo. & echo 正在增删削减%wimfile%包里的文件制作PE过程中，请您稍微等待 ...... & echo.
 bin\wimlib dir %wimfile% 1 --path=Windows\SysWOW64 | find ".exe" >NUL && (set FD=x64) || (set FD=x86)
