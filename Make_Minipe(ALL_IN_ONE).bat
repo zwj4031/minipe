@@ -48,12 +48,18 @@ start "" /w /min %NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">nul
 start "" /w /min %NSudo% -U:S -P:E -M:S "reg unload hklm\minipe">nul
 echo. & echo 覆盖%wimfile%中的注册表...... & echo.
 bin\wimlib update %wimfile% --command="add '%~dp0build\system' '\Windows\System32\config\system'"
+
 ::修改注册表完毕
 
 echo. & echo 正在增删削减%wimfile%包里的文件制作PE过程中，请您稍微等待 ...... & echo.
 bin\wimlib dir %wimfile% 1 --path=Windows\SysWOW64 | find ".exe" >NUL && (set FD=x64) || (set FD=x86)
 bin\wimlib update %wimfile%<excel.txt>NUL
 bin\wimlib update %wimfile%<%FD%\add2wim.txt>NUL
+::精简大文件
+::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\simsun.ttc' '\Windows\Fonts\simsun.ttc'"
+::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\imageres.dll' '\Windows\system32\imageres.dll'"
+::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\shell32.dll.mun' '\Windows\SystemResources\shell32.dll.mun'"
+
 bin\wimlib optimize %wimfile%
 set endT=%time%
 set /a costM=3%endT:~3,2%-3%startT:~3,2%
