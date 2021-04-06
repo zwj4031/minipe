@@ -107,4 +107,6 @@ add x86\wxsStub.dll "\Program Files\wxsStub.dll"
 add x86\wxsUI "\Program Files\wxsUI"
 add x86\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
 add x86\winpeshl.ini \Windows\System32\winpeshl.ini
+add x86\pe.reg \Windows\System32\pe.reg
+add x86\startnet.cmd \Windows\System32\startnet.cmd
 add x86\pecmd.exe \Windows\System32\pecmd.exe
