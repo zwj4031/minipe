@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Locale>
+    <Font id="16" size="16" name="Segoe UI"  shared="true"  default="true" />
+    <Font id="24" size="24" name="Segoe UI"  shared="true" />
+    <Font shared="true" id="sym" size="12" name="Segoe MDL2 Assets" />
+    <Font shared="true" id="sym16" size="16" name="Segoe MDL2 Assets" />
+</Locale>

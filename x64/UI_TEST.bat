@@ -1,6 +1,9 @@
 @echo off
 cd /d "%~dp0"
-
+start "" WinXShell.exe -ui -jcfg wxsUI\UI_Text\main.jcfg -text "得到服务器IP为:<u>127.0.0.1</u>"
+start "" WinXShell.exe -ui -jcfg wxsUI\UI_Text\main.jcfg -text ""
+start "" WinXShell.exe -ui -jcfg wxsUI\UI_Text\main.jcfg -text "然后想做啥:<u>127.0.0.1</u>"
+pause
 set WINXSHELL=WinXShell.exe
 set x8664=x64
 if not "x%PROCESSOR_ARCHITECTURE%"=="xAMD64" set x8664=x86
