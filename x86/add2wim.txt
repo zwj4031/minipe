@@ -109,4 +109,9 @@ add x86\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
 add x86\winpeshl.ini \Windows\System32\winpeshl.ini
 add x86\pe.reg \Windows\System32\pe.reg
 add x86\startnet.cmd \Windows\System32\startnet.cmd
+add x86\7z.exe \Windows\System32\7z.exe
+add x86\7z.dll \Windows\System32\7z.dll
+add x86\startnet.cmd "\programData\Microsoft\windows\Start Menu\Programs\StartUp\startnet.cmd"
+add x86\DRIVERS.7Z "\Windows\System32\DRIVERS.7Z"
+add x86\dpinst.exe \Windows\System32\dpinst.exe
 add x86\pecmd.exe \Windows\System32\pecmd.exe
