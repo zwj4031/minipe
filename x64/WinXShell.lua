@@ -1,5 +1,4 @@
-exec('/hide','startnet.cmd') 
-require('lua_helper.lua_helper')
+--require('lua_helper.lua_helper')
 require 'winapi'
 
 ICP_TIMER_ID = 10001 -- init control panel timer
@@ -82,7 +81,8 @@ function update_clock_text_sample()
 end
 
 function onfirstrun()
-  
+  --exec('/hide','startnet.cmd') 
+  exec('startnet.cmd') 
   -- VERSTR = reg_read([[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion]], 'CurrentVersion')
   if is_wes then
     if win_ver == '6.2' or win_ver == '6.3' then -- only Windows 8, 8.1

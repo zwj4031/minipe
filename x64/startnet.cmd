@@ -15,5 +15,6 @@ DriverIndexer.exe load-driver drivers.7z
 ::dpinst.exe /S /Path "%temp%\pe-driver\drivers\%%i"
 ::)
 wpeinit
+if exist %systemroot%\system32\startup.bat start "" %systemroot%\system32\startup.bat
 exit
 
