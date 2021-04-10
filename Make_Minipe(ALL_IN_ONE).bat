@@ -57,17 +57,24 @@ bin\wimlib update %wimfile%<%FD%\add2wim.txt>NUL
 ::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\simsun.ttc' '\Windows\Fonts\simsun.ttc'"
 ::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\imageres.dll' '\Windows\system32\imageres.dll'"
 ::bin\wimlib update %wimfile% --command="add '%~dp0%FD%\lite\shell32.dll.mun' '\Windows\SystemResources\shell32.dll.mun'"
+
 ::生成wim
 bin\wimlib optimize %wimfile%
+move /y %wimfile% iso\Windows10-PE\sources\
+
 set endT=%time%
 set /a costM=3%endT:~3,2%-3%startT:~3,2%
 if %costM% lss 0 set /a costM=%costM%+60
 set /a costT=3%endT:~9,2%-3%startT:~9,2%+(3%endT:~6,2%-3%startT:~6,2%+%costM%*60)*100
 echo. & echo 结束时间：%endT%   耗时：%costT:~0,-2%.%costT:~-2% 秒
 del /f /q *.txt
-set output=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%wimfile%
-ren %wimfile% "%output%"
+
+set output=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%
+
+echo. & echo 正在创建ISO，请稍等 ...... & echo.
+bin\oscdimg -n -bbin\boot.bif iso\Windows10-PE %output%.iso
+
 if exist %~dp0build rd /s /q %~dp0build
-echo. & echo 感谢您的等待，现在PE已经制作完成，%output%就是你的网络骨头版pe成品！ & echo.
+echo. & echo 感谢您的等待，%output%.iso已经制作完成。& echo.
 pause
 EXIT
