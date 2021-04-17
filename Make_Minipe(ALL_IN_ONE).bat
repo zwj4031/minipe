@@ -67,7 +67,12 @@ echo. & echo 结束时间：%endT%   耗时：%costT:~0,-2%.%costT:~-2% 秒
 del /f /q *.txt
 set output=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%wimfile%
 ren %wimfile% "%output%"
-if exist %~dp0build rd /s /q %~dp0build
 echo. & echo 感谢您的等待，现在PE已经制作完成，%output%就是你的网络骨头版pe成品！ & echo.
+echo. & echo 正在将这次制作的PE打包成WindowsPE.iso & echo.
+copy /y "%output%" %~dp0build\iso\Makeiso\boot\boot.wim
+pause
+%~dp0build\oscdimg.exe -h -d -m -o -u1 -lWindowsPE -bootdata:2#p00,e,b%~dp0build\iso\boot.bin#pEF,e,b%~dp0build\iso\efiboot.img %~dp0build\iso\Makeiso %~dp0WindowsPE.iso
+echo 最新ISO文件打包完成，保存在：%~dp0WindowsPE.iso
+del /s /Q %~dp0build\iso\Makeiso\boot\boot.wim
 pause
 EXIT
