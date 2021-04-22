@@ -117,4 +117,6 @@ add x64\drivers.7z "\Windows\System32\drivers.7z"
 add x64\dpinst.exe \Windows\System32\dpinst.exe
 add x64\DriverIndexer.exe \Windows\System32\DriverIndexer.exe
 add x64\pecmd.exe \Windows\System32\pecmd.exe
+add x64\fbwf\fbwf.sys \Windows\System32\drivers\fbwf.sys
+add x64\fbwf\fbwf.cfg \Windows\fbwf.cfg
 
