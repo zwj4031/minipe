@@ -98,25 +98,6 @@ delete --force --recursive \Windows\System32\WindowsPowerShell
 delete --force --recursive \Windows\System32\winevt
 delete --force --recursive \Windows\System32\zh-TW
 delete --force --recursive \Windows\SysWOW64
-add x64\Explorer.exe "\Program Files\Explorer.exe"
-add x64\LUA_TEST.bat "\Program Files\LUA_TEST.bat"
-add x64\UI_TEST.bat "\Program Files\UI_TEST.bat"
-add x64\WinXShell.exe "\Program Files\WinXShell.exe"
-add x64\WinXShell.jcfg "\Program Files\WinXShell.jcfg"
-add x64\WinXShell.lua "\Program Files\WinXShell.lua"
-add x64\wallpaper.jpg "\Program Files\wallpaper.jpg"
-add x64\wxsStub.dll "\Program Files\wxsStub.dll"
-add x64\wxsUI "\Program Files\wxsUI"
-add x64\¿ªÆôWiFiÍøÂç.BAT "\Users\Default\DeskTop\¿ªÆôWiFiÍøÂç.BAT"
-add x64\winpeshl.ini \Windows\System32\winpeshl.ini
-add x64\pe.reg \Windows\System32\pe.reg
-add x64\startnet.cmd "\Windows\System32\startnet.cmd"
-add x64\7z.exe \Windows\System32\7z.exe
-add x64\7z.dll \Windows\System32\7z.dll
-add x64\drivers.7z "\Windows\System32\drivers.7z"
-add x64\dpinst.exe \Windows\System32\dpinst.exe
-add x64\DriverIndexer.exe \Windows\System32\DriverIndexer.exe
-add x64\pecmd.exe \Windows\System32\pecmd.exe
-add x64\fbwf\fbwf.sys \Windows\System32\drivers\fbwf.sys
-add x64\fbwf\fbwf.cfg \Windows\fbwf.cfg
+add x64\x \
+
 
