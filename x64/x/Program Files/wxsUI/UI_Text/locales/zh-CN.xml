@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Locale>
-    <Font shared="true" id="16" size="16" name="微软雅黑" default="true" />
-    <Font shared="true" id="24" size="24" name="微软雅黑" />
-    <Font shared="true" id="sym" size="12" name="Segoe MDL2 Assets" />
-    <Font shared="true" id="sym16" size="16" name="Segoe MDL2 Assets" />
-</Locale>
