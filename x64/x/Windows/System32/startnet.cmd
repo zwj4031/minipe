@@ -31,24 +31,21 @@ if exist %systemroot%\system32\drivers.7z  (
 :::::7z x drivers.7z -o%temp%\pe-driver\drivers
 DriverIndexer.exe load-driver drivers.7z 
 )
+%xsay%
 
-%say% "启动lanmanserver、workstation服务..." %font%
+%say% "启动网络共享相关服务..." %font%
 net start lanmanserver>nul
 net start lanmanworkstation>nul
-::echo 安装驱动……
-::for /f %%i in ('dir /b %temp%\pe-driver\drivers') do (
-::dpinst.exe /S /Path "%temp%\pe-driver\drivers\%%i"
-::)
-
 %xsay%
+
 %say% "加载外置..." %font%
 if exist %systemroot%\pecmd.ini  (
 pecmd load %systemroot%\pecmd.ini
 )
 %xsay%
-%say% "启动中.." %font%
-wpeinit
+%say% "完成! 开始启动..." %font%
 %xsay%
+wpeinit
 if exist %systemroot%\system32\startup.bat start "" %systemroot%\system32\startup.bat
 exit
 
