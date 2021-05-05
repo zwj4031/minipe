@@ -24,7 +24,7 @@ set wait=%root%\pecmd.exe wait 800
 if not "%2" == "" set args1=%1&&set args2=%2&&goto startjob
 ::公用脚本1结束
 
-regedit /s pe.reg
+
 %say% "正在安装驱动..." %font%
 echo 解压驱动……
 if exist %systemroot%\system32\drivers.7z  (
@@ -45,6 +45,7 @@ pecmd load %systemroot%\pecmd.ini
 %xsay%
 %say% "完成! 开始启动..." %font%
 %xsay%
+regedit /s pe.reg
 wpeinit
 if exist %systemroot%\system32\startup.bat start "" %systemroot%\system32\startup.bat
 exit
